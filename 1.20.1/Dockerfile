@@ -24,8 +24,8 @@ RUN apt update \
         git \
         ca-certificates
 # Change Ubuntu repository address to Kakao server in Republic of Korea
-RUN sed -i 's/^deb http:\/\/deb.debian.org/deb https:\/\/mirror.loopback.kr/g' /etc/apt/sources.list
-RUN sed -i 's/^deb http:\/\/security.debian.org/deb https:\/\/mirror.loopback.kr/g' /etc/apt/sources.list
+RUN sed -i 's/^deb http:\/\/deb.debian.org/deb https:\/\/ftp.kaist.ac.kr/g' /etc/apt/sources.list
+RUN sed -i 's/^deb http:\/\/security.debian.org/deb https:\/\/ftp.kaist.ac.kr/g' /etc/apt/sources.list
 
 
 ### Setup requirements
